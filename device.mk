@@ -298,6 +298,7 @@ PRODUCT_PACKAGES += \
     ueventd.mt6785.rc
 
 # Configure dex2oat
+PRODUCT_ALWAYS_PREOPT_EXTRACTED_APK := true
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.boot-dex2oat-cpu-set=0,1,2,3,4,5,6,7 \
     dalvik.vm.boot-dex2oat-threads=8 \
