@@ -95,6 +95,7 @@ dalvik.vm.dex2oat-threads=6
 dalvik.vm.dex2oat64.enabled=true
 dalvik.vm.mtk-stack-trace-file=/data/anr/mtk_traces.txt
 
+
 # Data
 ro.vendor.mtk_emmc_support=1
 ro.vendor.mtk_fd_support=1
@@ -151,6 +152,8 @@ debug.sf.late.app.duration=24000000
 debug.sf.late.sf.duration=30000000
 debug.sf.predict_hwc_composition_strategy=0
 debug.sf.use_phase_offsets_as_durations=1
+debug.hwui.use_hint_manager=true
+debug.hwui.target_cpu_time_percent=30
 persist.sys.sf.color_saturation=1.1
 persist.sys.sf.color_mode=0
 persist.sys.sf.native_mode=2
