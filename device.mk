@@ -359,10 +359,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libtextclassifier_hash.vendor
 
-# Thermal
-PRODUCT_PACKAGES += \
-    android.hardware.thermal@2.0.vendor
-
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb-service.mediatek-legacy
