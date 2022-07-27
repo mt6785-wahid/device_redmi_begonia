@@ -375,7 +375,6 @@ vendor/lib/hw/consumerir.mt6785.so
 vendor/lib64/hw/consumerir.mt6785.so
 
 # DRM
-vendor/lib/liboemcrypto.so
 vendor/lib64/liboemcrypto.so
 
 # DRM-Hardware
@@ -385,7 +384,6 @@ vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
 
 # DRM-Widevine
 vendor/lib/libwvhidl.so
-vendor/lib/mediadrm/libwvdrmengine.so
 vendor/lib64/libwvhidl.so
 vendor/lib64/mediadrm/libwvdrmengine.so
 
@@ -777,13 +775,10 @@ system_ext/bin/rtt
 system_ext/bin/trace
 system_ext/etc/custom.conf
 system_ext/etc/init/mdlogger.rc
-system_ext/lib/drm/cta/libdrmctaplugin.so
 system_ext/lib/libaed.so
 system_ext/lib/libapuwareapusys.mtk.so
 system_ext/lib/libapuwareutils.mtk.so
 system_ext/lib/libapuwarexrp.mtk.so
-system_ext/lib/libdrmmtkutil.so
-system_ext/lib/libdrmmtkwhitelist.so
 system_ext/lib/libjpgt.so
 system_ext/lib/liblept.so
 system_ext/lib/libpngt.so
@@ -1285,7 +1280,6 @@ vendor/lib/libtflite_mtk.so
 vendor/lib/libtflite_mtk_static_R.so
 vendor/lib/libthha.so
 vendor/lib/libtinyxml.so
-vendor/lib/libtlcWidevineModularDrm.so
 vendor/lib/libudf.so
 vendor/lib/libvc1dec_sa.ca7.so
 vendor/lib/libvcodec_oal.so
@@ -1308,8 +1302,6 @@ vendor/lib/libvpud_vcodec.so
 vendor/lib/libvt_custom.so
 vendor/lib/libwapi.so
 vendor/lib/libwo.so
-vendor/lib/libwvkeybox.so
-vendor/lib/libwvkeyboxext.so
 vendor/lib/ov02a10af_mipi_raw_IdxMgr.so
 vendor/lib/ov02a10af_mipi_raw_tuning.so
 vendor/lib/ov02a10alpha_mipi_raw_IdxMgr.so
