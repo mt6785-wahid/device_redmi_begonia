@@ -434,6 +434,15 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     libshim_vtservice
 
+# Telephony
+PRODUCT_PACKAGES += \
+    extphonelib \
+    extphonelib-product \
+    extphonelib.xml \
+    extphonelib_product.xml \
+    ims-ext-common \
+    ims_ext_common.xml
+
 # RCS
 PRODUCT_PACKAGES += \
     com.android.ims.rcsmanager \
