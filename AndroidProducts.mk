@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/derp_begonia.mk
+    $(LOCAL_DIR)/blaze_begonia.mk
