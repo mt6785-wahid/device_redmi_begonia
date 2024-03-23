@@ -63,6 +63,9 @@ dalvik.vm.useartservice=true
 # Display
 debug.cpurend.vsync=false
 
+# Filesystem
+fs_mgr.overlayfs.prefer_cache_backing_storage=true
+
 # Graphics
 ro.opengles.version=196610
 
