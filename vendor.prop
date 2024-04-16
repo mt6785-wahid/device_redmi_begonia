@@ -309,7 +309,6 @@ vendor.sys.thermal.data.path=/data/vendor/thermal/
 persist.vendor.connsys.chipid=-1
 persist.vendor.connsys.dynamic.dump=0
 persist.vendor.connsys.patch.version=-1
-ro.vendor.connsys.dedicated.log=1
 ro.vendor.mtk_wfd_support=1
 ro.vendor.wifi.sap.interface=ap0
 ro.vendor.wlan.gen=gen4m
