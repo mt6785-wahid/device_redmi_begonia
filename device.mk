@@ -361,10 +361,7 @@ PRODUCT_PACKAGES += \
 
 # USB
 PRODUCT_PACKAGES += \
-    android.hardware.usb.gadget@1.0.vendor \
-    android.hardware.usb.gadget@1.1.vendor \
-    android.hardware.usb@1.0.vendor \
-    android.hardware.usb@1.1.vendor
+    android.hardware.usb-service.mediatek-legacy
 
 # Vibrator
 PRODUCT_PACKAGES += \
