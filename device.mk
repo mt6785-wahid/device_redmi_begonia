@@ -57,6 +57,10 @@ PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml \
     frameworks/av/services/audiopolicy/config/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml
 
+# Audio - USB Accessories
+PRODUCT_COPY_FILES += \
+    $(call soong_config_set,android_hardware_mediatek_usb,audio_accessory_supported,true)
+
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.device@3.3.vendor \
