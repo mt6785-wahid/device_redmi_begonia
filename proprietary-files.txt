@@ -1231,6 +1231,7 @@ vendor/lib/libh264enc_sa.ca7.so
 vendor/lib/libhdrvideo.so
 vendor/lib/libHEVCdec_sa.ca7.android.so
 vendor/lib/libhevce_sb.ca7.android.so
+vendor/lib/libhwm.so
 vendor/lib/libhydra.so
 vendor/lib/libimageio.so
 vendor/lib/libimageio_plat_drv.so
