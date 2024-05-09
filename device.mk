@@ -83,10 +83,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Debloat
 
-# Device-specific settings
-PRODUCT_PACKAGES += \
-    XiaomiParts
-
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.1-service \
