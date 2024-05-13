@@ -13,6 +13,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/userspace_reboot.mk)
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
+PRODUCT_SHIPPING_API_LEVEL := 28
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     hardware/google/interfaces \
