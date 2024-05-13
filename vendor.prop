@@ -293,9 +293,6 @@ ro.vendor.sim_refresh_reset_by_modem=1
 telephony.active_modems.max_count=2
 telephony.lteOnCdmaDevice=1
 
-# Shutdown
-init.userspace_reboot.is_supported=true
-
 # TEE
 ro.hardware.gatekeeper=beanpod
 ro.hardware.kmsetkey=beanpod
