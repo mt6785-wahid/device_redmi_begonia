@@ -956,6 +956,8 @@ lib64/extractors/libmtkflvextractor.so
 lib64/extractors/libmtkmp3extractor.so
 lib64/extractors/libmtkmpeg2extractor.so
 vendor/etc/mtk_omx_core.cfg
+vendor/etc/seccomp_policy/mediacodec.policy
+vendor/etc/seccomp_policy/mediaswcodec.policy
 vendor/lib/hw/vendor.mediatek.hardware.mtkcodecservice@1.1-impl.so
 vendor/lib/AVCSecureVdecCA.so
 vendor/lib/VP9SecureVdecCA.so
