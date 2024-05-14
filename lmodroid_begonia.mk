@@ -14,8 +14,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from begonia device
 $(call inherit-product, device/redmi/begonia/device.mk)
 
-# Inherit some common Derpfest stuff
-$(call inherit-product, vendor/derp/config/common_full_phone.mk)
+# Inherit some common lineage stuff
+$(call inherit-product, vendor/lmodroid/config/common_full_phone.mk)
 TARGET_ENABLE_BLUR := true
 TARGET_USES_AOSP_RECOVERY := true
 TARGET_USES_PICO_GAPPS := true
@@ -37,12 +37,9 @@ TARGET_SCREEN_HEIGHT := 2340
 TARGET_SCREEN_WIDTH := 1080
 TARGET_BOOT_ANIMATION_RES := 1080
 
-#Derpfest Official
-DERP_BUILDTYPE := Official
-
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := begonia
-PRODUCT_NAME := derp_begonia
+PRODUCT_NAME := lmodroid_begonia
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi Note 8 Pro
 PRODUCT_MANUFACTURER := Xiaomi

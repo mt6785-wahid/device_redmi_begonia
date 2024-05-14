@@ -132,10 +132,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     Fastbootd
 
-# FlashCam
-PRODUCT_PACKAGES += \
-    FlashOverlay
-
 # Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-service \
@@ -249,7 +245,7 @@ PRODUCT_PACKAGES += \
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-derp
+    $(LOCAL_PATH)/overlay-lmodroid
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
