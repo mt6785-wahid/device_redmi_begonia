@@ -128,9 +128,9 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/flash_super_dummy.sh:install/bin/flash_super_dummy.sh
 
-# fastbootd
+# Fastbootd
 PRODUCT_PACKAGES += \
-    Fastbootd
+    fastbootd
 
 # Gatekeeper
 PRODUCT_PACKAGES += \

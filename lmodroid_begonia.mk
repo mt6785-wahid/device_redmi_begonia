@@ -18,7 +18,6 @@ $(call inherit-product, device/redmi/begonia/device.mk)
 $(call inherit-product, vendor/lmodroid/config/common_full_phone.mk)
 TARGET_ENABLE_BLUR := true
 TARGET_USES_AOSP_RECOVERY := true
-TARGET_USES_PICO_GAPPS := true
 
 # Inherit some extras stuff
 $(call inherit-product-if-exists, vendor/extras/extras.mk)
