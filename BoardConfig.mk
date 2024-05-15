@@ -111,8 +111,8 @@ BOARD_SUPER_PARTITION_GROUPS := xiaomi_dynamic_partitions
 BOARD_XIAOMI_DYNAMIC_PARTITIONS_SIZE := $(shell expr $(BOARD_SUPER_PARTITION_SIZE) - 4194304 )
 BOARD_XIAOMI_DYNAMIC_PARTITIONS_PARTITION_LIST := odm product system system_ext vendor
 
-BOARD_EROFS_COMPRESSOR := lz4
-BOARD_EROFS_PCLUSTER_SIZE := 262144
+#BOARD_EROFS_COMPRESSOR := lz4
+#BOARD_EROFS_PCLUSTER_SIZE := 262144
 
 # System as root
 BOARD_SUPPRESS_SECURE_ERASE := true
@@ -125,7 +125,7 @@ TREBLE_PARTITIONS := odm vendor
 ALL_PARTITIONS := $(SSI_PARTITIONS) $(TREBLE_PARTITIONS)
 
 $(foreach p, $(call to-upper, $(ALL_PARTITIONS)), \
-    $(eval BOARD_$(p)IMAGE_FILE_SYSTEM_TYPE := erofs) \
+    $(eval BOARD_$(p)IMAGE_FILE_SYSTEM_TYPE := ext4) \
     $(eval TARGET_COPY_OUT_$(p) := $(call to-lower, $(p))))
 
 # Partitions (reserved size)
