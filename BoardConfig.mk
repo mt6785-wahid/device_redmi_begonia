@@ -198,5 +198,10 @@ SYSTEM_EXT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 # Vibrator
 TARGET_VIBRATOR_SUPPORTS_EFFECTS := true
 
+# Dolby
+USE_CUSTOM_AUDIO_POLICY := 1
+AUDIO_FEATURE_ENABLED_HW_ACCELERATED_EFFECTS := true
+TARGET_PROVIDES_AUDIO_EXTNS := true
+
 # Inherit from the proprietary version
 include vendor/redmi/begonia/BoardConfigVendor.mk
