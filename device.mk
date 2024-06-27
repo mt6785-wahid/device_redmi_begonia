@@ -1,4 +1,4 @@
-#
+	#
 # Copyright (C) 2023 The Android Open Source Project
 #
 # SPDX-License-Identifier: Apache-2.0
@@ -49,7 +49,10 @@ PRODUCT_PACKAGES += \
     libvisualizer \
     libtinycompress \
     libaudiofoundation \
-    libaudiofoundation.vendor
+    libaudiofoundation.vendor \
+    libssl.vendor \
+    libstagefright_softomx.vendor \
+    libstagefright_softomx_plugin.vendor
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
@@ -75,6 +78,14 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.5.vendor \
     android.hardware.camera.provider@2.6.vendor
 
+PRODUCT_PACKAGES += \
+   libpng.vendor \
+   libjsoncpp.vendor \
+   libsqlite.vendor \
+   libexpat.vendor \
+   liblz4.vendor \
+   libcamera_metadata.vendor
+
 # Configure dex2oat
 PRODUCT_ALWAYS_PREOPT_EXTRACTED_APK := true
 PRODUCT_USE_PROFILE_FOR_BOOT_IMAGE := true
@@ -97,11 +108,14 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 
 # Display
 PRODUCT_PACKAGES += \
+    android.hardware.graphics.allocator@4.0.vendor \
     android.hardware.graphics.composer@2.1-service \
     android.hardware.graphics.composer@2.1-resources \
     android.hardware.graphics.composer@2.1-resources.vendor \
     android.hardware.memtrack-service.mediatek-mali \
     libdrm.vendor \
+    libion.vendor \
+    libui.vendor \
     libvulkan \
     libfmq.vendor \
     libhwc2on1adapter \
@@ -148,11 +162,17 @@ PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
     android.hardware.gatekeeper@1.0.vendor
 
+PRODUCT_PACKAGES += \
+    libgatekeeper.vendor
+
 # GNSS
 PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1.vendor \
     android.hardware.gnss.measurement_corrections@1.1.vendor \
     android.hardware.gnss.visibility_control@1.0.vendor
+
+PRODUCT_PACKAGES += \
+    libcurl.vendor
 
 # Health
 PRODUCT_PACKAGES += \
@@ -182,7 +202,8 @@ PRODUCT_PACKAGES += \
     libkeymaster_messages.vendor:64 \
     libsoft_attestation_cert.vendor:64 \
     libpuresoftkeymasterdevice.vendor:64 \
-    libshim_beanpod.vendor
+    libshim_beanpod.vendor \
+    libnetutils.vendor
 
 # Lights
 PRODUCT_PACKAGES += \
@@ -248,6 +269,7 @@ PRODUCT_PACKAGES += \
     libhwbinder \
     libhwbinder.vendor \
     libhidltransport \
+    libhidlmemory.vendor \
     libhidltransport.vendor \
     libhidlbase \
     libunwindstack.vendor
@@ -386,6 +408,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libsensorndkbridge \
+    libpower.vendor \
     libshim_sensors
 
 # Telephony
@@ -423,6 +446,10 @@ PRODUCT_COPY_FILES += \
     prebuilts/vndk/v30/arm64/arch-arm64-armv8-a/shared/vndk-sp/libunwindstack.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libunwindstack-v30.so \
     prebuilts/vndk/v32/arm64/arch-arm-armv8-a/shared/vndk-sp/libutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libutils-v32.so \
     prebuilts/vndk/v32/arm64/arch-arm64-armv8-a/shared/vndk-sp/libutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libutils-v32.so
+
+PRODUCT_PACKAGES += \
+    libutilscallstack.vendor \
+    libdumpstateutil.vendor
 
 # WiFi
 PRODUCT_PACKAGES += \
