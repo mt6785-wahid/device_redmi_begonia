@@ -38,7 +38,6 @@ TARGET_BOOTLOADER_BOARD_NAME := begonia
 TARGET_NO_BOOTLOADER := true
 
 # Platform
-TARGET_BOARD_PLATFORM := mt6785
 BOARD_HAS_MTK_HARDWARE := true
 BOARD_HAVE_MTK_FM := true
 
@@ -165,7 +164,7 @@ ENABLE_VENDOR_RIL_SERVICE := true
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(DEVICE_PATH)/framework_compatibility_matrix.xml \
-    vendor/derp/config/device_framework_matrix.xml
+    vendor/yaap/config/device_framework_matrix.xml
 
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 ODM_MANIFEST_SKUS += \
