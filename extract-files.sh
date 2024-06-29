@@ -54,6 +54,9 @@ fi
 
 function blob_fixup {
     case "${1}" in
+        system_ext/lib64/libsource.so)
+            grep -q "libui_shim.so" "${2}" || "${PATCHELF}" --add-needed "libui_shim.so" "${2}"
+            ;;
         vendor/bin/hw/android.hardware.lights-service.mediatek)
             "${PATCHELF}" --replace-needed "android.hardware.light-V1-ndk_platform.so" "android.hardware.light-V1-ndk.so" "${2}"
             ;;
